@@ -1,0 +1,32 @@
+{
+  "basic" : {
+    "description" : "Exterior steam detailing, Interior vacuum, Full interior deep steam sanitizing, Wheel and tyre clean, Tyre shine, Glass cleaning, Floor mat cleaning",
+    "imageWithName" : "",
+    "name" : "Basic Detailing",
+    "price" : 500
+  },
+  "enginebay" : {
+    "description" : "Only engine bay detailing",
+    "imageWithName" : "",
+    "name" : "Engine Bay Detailing",
+    "price" : 1000
+  },
+  "interior" : {
+    "description" : "Basic detailing, AC vent sanitizing, Interior leather cleaning and conditioning, Upholstery treatment, Full interior deep steam sanitizing, Roof top dirt Extraction",
+    "imageWithName" : "",
+    "name" : "Interior Exterior",
+    "price" : 1800
+  },
+  "premium" : {
+    "description" : "Paint correction or Ceramic Coating",
+    "imageWithName" : "",
+    "name" : "Premium Services",
+    "price" : 1000
+  },
+  "total" : {
+    "description" : "Basic Detailing, Interior Detailing, Engine bay detailing, Spray Wax, Trim dressing, Metal Shine",
+    "imageWithName" : "",
+    "name" : "Total Steam Detailing",
+    "price" : 3000
+  }
+}

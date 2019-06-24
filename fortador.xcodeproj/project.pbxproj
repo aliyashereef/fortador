@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E03672D22018A080067920C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E03672C22018A080067920C /* MapKit.framework */; };
+		6E03672F22018EB30067920C /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6E03672E22018EB30067920C /* podfile */; };
+		6E139914222C365900CA3A8C /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E139913222C365900CA3A8C /* user.swift */; };
+		6E28CE5E2229D19100F3FFF9 /* serviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28CE5D2229D19100F3FFF9 /* serviceCell.swift */; };
+		6E4687F6222EFAB10087A03E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E4687F5222EFAB10087A03E /* GoogleService-Info.plist */; };
+		6E88CC14226B732E0040A916 /* autoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E88CC13226B732E0040A916 /* autoTableViewCell.swift */; };
+		6E88CC16226B73480040A916 /* serviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E88CC15226B73480040A916 /* serviceTableViewCell.swift */; };
+		6EA63C1C21CFD3D1006B4D7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA63C1B21CFD3D1006B4D7B /* AppDelegate.swift */; };
+		6EA63C2121CFD3D1006B4D7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EA63C1F21CFD3D1006B4D7B /* Main.storyboard */; };
+		6EA63C2421CFD3D1006B4D7B /* fortador.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EA63C2221CFD3D1006B4D7B /* fortador.xcdatamodeld */; };
+		6EA63C2621CFD3D3006B4D7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EA63C2521CFD3D3006B4D7B /* Assets.xcassets */; };
+		6EA63C2921CFD3D3006B4D7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EA63C2721CFD3D3006B4D7B /* LaunchScreen.storyboard */; };
+		6EA63C3421CFD3D3006B4D7B /* fortadorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA63C3321CFD3D3006B4D7B /* fortadorTests.swift */; };
+		6EA63C3F21CFD3D3006B4D7B /* fortadorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA63C3E21CFD3D3006B4D7B /* fortadorUITests.swift */; };
+		6EA63C4D21CFDBD0006B4D7B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA63C4C21CFDBCF006B4D7B /* HomeViewController.swift */; };
+		6EA63C4F21CFDC4A006B4D7B /* mapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA63C4E21CFDC4A006B4D7B /* mapCell.swift */; };
+		6EA63C5121CFDCDD006B4D7B /* automobileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA63C5021CFDCDD006B4D7B /* automobileCell.swift */; };
+		6EB443372283171900260D65 /* services.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EB443362283171900260D65 /* services.json */; };
+		6ED064B8223C44B800632DB3 /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED064B7223C44B800632DB3 /* ServiceRequest.swift */; };
+		6ED064BA223C453D00632DB3 /* Auto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED064B9223C453D00632DB3 /* Auto.swift */; };
+		6EE02099220213FC00C1EADB /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EE02098220213FC00C1EADB /* style.json */; };
+		6EF7DE9F222A5BC1004CD014 /* service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF7DE9E222A5BC1004CD014 /* service.swift */; };
+		6EF8C2172280BF0000CE8B37 /* serviceDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF8C2162280BF0000CE8B37 /* serviceDescriptionCell.swift */; };
+		6EF8C2192281E90A00CE8B37 /* dateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF8C2182281E90A00CE8B37 /* dateCell.swift */; };
+		6EF8C21B2281E91900CE8B37 /* datePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF8C21A2281E91900CE8B37 /* datePickerCell.swift */; };
+		6EF8C21D2281E98B00CE8B37 /* serviceRequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF8C21C2281E98B00CE8B37 /* serviceRequestCell.swift */; };
+		D160C607AFE18934222A7C75 /* libPods-fortador.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A12B0949509E176D7BD471F /* libPods-fortador.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EA63C3021CFD3D3006B4D7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EA63C1021CFD3D1006B4D7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EA63C1721CFD3D1006B4D7B;
+			remoteInfo = fortador;
+		};
+		6EA63C3B21CFD3D3006B4D7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EA63C1021CFD3D1006B4D7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EA63C1721CFD3D1006B4D7B;
+			remoteInfo = fortador;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A12B0949509E176D7BD471F /* libPods-fortador.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fortador.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E03672C22018A080067920C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6E03672E22018EB30067920C /* podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6E139913222C365900CA3A8C /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		6E28CE5D2229D19100F3FFF9 /* serviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = serviceCell.swift; sourceTree = "<group>"; };
+		6E4687F5222EFAB10087A03E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6E88CC13226B732E0040A916 /* autoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = autoTableViewCell.swift; sourceTree = "<group>"; };
+		6E88CC15226B73480040A916 /* serviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = serviceTableViewCell.swift; sourceTree = "<group>"; };
+		6EA63C1821CFD3D1006B4D7B /* fortador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fortador.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA63C1B21CFD3D1006B4D7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6EA63C2021CFD3D1006B4D7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6EA63C2321CFD3D1006B4D7B /* fortador.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fortador.xcdatamodel; sourceTree = "<group>"; };
+		6EA63C2521CFD3D3006B4D7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6EA63C2821CFD3D3006B4D7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6EA63C2A21CFD3D3006B4D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EA63C2F21CFD3D3006B4D7B /* fortadorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fortadorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA63C3321CFD3D3006B4D7B /* fortadorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fortadorTests.swift; sourceTree = "<group>"; };
+		6EA63C3521CFD3D3006B4D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EA63C3A21CFD3D3006B4D7B /* fortadorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fortadorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA63C3E21CFD3D3006B4D7B /* fortadorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fortadorUITests.swift; sourceTree = "<group>"; };
+		6EA63C4021CFD3D3006B4D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EA63C4C21CFDBCF006B4D7B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6EA63C4E21CFDC4A006B4D7B /* mapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapCell.swift; sourceTree = "<group>"; };
+		6EA63C5021CFDCDD006B4D7B /* automobileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = automobileCell.swift; sourceTree = "<group>"; };
+		6EB443362283171900260D65 /* services.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = services.json; sourceTree = "<group>"; };
+		6ED064B7223C44B800632DB3 /* ServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequest.swift; sourceTree = "<group>"; };
+		6ED064B9223C453D00632DB3 /* Auto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auto.swift; sourceTree = "<group>"; };
+		6EE02098220213FC00C1EADB /* style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
+		6EF7DE9E222A5BC1004CD014 /* service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = service.swift; sourceTree = "<group>"; };
+		6EF8C2162280BF0000CE8B37 /* serviceDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = serviceDescriptionCell.swift; sourceTree = "<group>"; };
+		6EF8C2182281E90A00CE8B37 /* dateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateCell.swift; sourceTree = "<group>"; };
+		6EF8C21A2281E91900CE8B37 /* datePickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datePickerCell.swift; sourceTree = "<group>"; };
+		6EF8C21C2281E98B00CE8B37 /* serviceRequestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = serviceRequestCell.swift; sourceTree = "<group>"; };
+		75BC56F2240400ADFCC1FE9A /* Pods-fortador.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fortador.release.xcconfig"; path = "Pods/Target Support Files/Pods-fortador/Pods-fortador.release.xcconfig"; sourceTree = "<group>"; };
+		E646D1378074A1500C9C40DC /* Pods-fortador.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fortador.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fortador/Pods-fortador.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EA63C1521CFD3D1006B4D7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E03672D22018A080067920C /* MapKit.framework in Frameworks */,
+				D160C607AFE18934222A7C75 /* libPods-fortador.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA63C2C21CFD3D3006B4D7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA63C3721CFD3D3006B4D7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E03672B22018A080067920C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E03672C22018A080067920C /* MapKit.framework */,
+				2A12B0949509E176D7BD471F /* libPods-fortador.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E139911222C34F600CA3A8C /* models */ = {
+			isa = PBXGroup;
+			children = (
+				6EF7DE9E222A5BC1004CD014 /* service.swift */,
+				6ED064B9223C453D00632DB3 /* Auto.swift */,
+				6ED064B7223C44B800632DB3 /* ServiceRequest.swift */,
+				6E139913222C365900CA3A8C /* user.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		6E139912222C351C00CA3A8C /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				6E28CE5D2229D19100F3FFF9 /* serviceCell.swift */,
+				6EA63C5021CFDCDD006B4D7B /* automobileCell.swift */,
+				6EA63C4E21CFDC4A006B4D7B /* mapCell.swift */,
+				6E88CC13226B732E0040A916 /* autoTableViewCell.swift */,
+				6E88CC15226B73480040A916 /* serviceTableViewCell.swift */,
+				6EF8C2162280BF0000CE8B37 /* serviceDescriptionCell.swift */,
+				6EF8C2182281E90A00CE8B37 /* dateCell.swift */,
+				6EF8C21C2281E98B00CE8B37 /* serviceRequestCell.swift */,
+				6EF8C21A2281E91900CE8B37 /* datePickerCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		6EA63C0F21CFD3D1006B4D7B = {
+			isa = PBXGroup;
+			children = (
+				6E03672E22018EB30067920C /* podfile */,
+				6EA63C1A21CFD3D1006B4D7B /* fortador */,
+				6EA63C3221CFD3D3006B4D7B /* fortadorTests */,
+				6EA63C3D21CFD3D3006B4D7B /* fortadorUITests */,
+				6EA63C1921CFD3D1006B4D7B /* Products */,
+				6E03672B22018A080067920C /* Frameworks */,
+				AD88317C99A67283CFC688F3 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6EA63C1921CFD3D1006B4D7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EA63C1821CFD3D1006B4D7B /* fortador.app */,
+				6EA63C2F21CFD3D3006B4D7B /* fortadorTests.xctest */,
+				6EA63C3A21CFD3D3006B4D7B /* fortadorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EA63C1A21CFD3D1006B4D7B /* fortador */ = {
+			isa = PBXGroup;
+			children = (
+				6EA63C1B21CFD3D1006B4D7B /* AppDelegate.swift */,
+				6EA63C1F21CFD3D1006B4D7B /* Main.storyboard */,
+				6EA63C4C21CFDBCF006B4D7B /* HomeViewController.swift */,
+				6E139911222C34F600CA3A8C /* models */,
+				6E139912222C351C00CA3A8C /* cells */,
+				6EE02098220213FC00C1EADB /* style.json */,
+				6EB443362283171900260D65 /* services.json */,
+				6EA63C2521CFD3D3006B4D7B /* Assets.xcassets */,
+				6EA63C2721CFD3D3006B4D7B /* LaunchScreen.storyboard */,
+				6EA63C2A21CFD3D3006B4D7B /* Info.plist */,
+				6EA63C2221CFD3D1006B4D7B /* fortador.xcdatamodeld */,
+				6E4687F5222EFAB10087A03E /* GoogleService-Info.plist */,
+			);
+			path = fortador;
+			sourceTree = "<group>";
+		};
+		6EA63C3221CFD3D3006B4D7B /* fortadorTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EA63C3321CFD3D3006B4D7B /* fortadorTests.swift */,
+				6EA63C3521CFD3D3006B4D7B /* Info.plist */,
+			);
+			path = fortadorTests;
+			sourceTree = "<group>";
+		};
+		6EA63C3D21CFD3D3006B4D7B /* fortadorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6EA63C3E21CFD3D3006B4D7B /* fortadorUITests.swift */,
+				6EA63C4021CFD3D3006B4D7B /* Info.plist */,
+			);
+			path = fortadorUITests;
+			sourceTree = "<group>";
+		};
+		AD88317C99A67283CFC688F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E646D1378074A1500C9C40DC /* Pods-fortador.debug.xcconfig */,
+				75BC56F2240400ADFCC1FE9A /* Pods-fortador.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EA63C1721CFD3D1006B4D7B /* fortador */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EA63C4321CFD3D3006B4D7B /* Build configuration list for PBXNativeTarget "fortador" */;
+			buildPhases = (
+				1C0D7C41F5E7707D0E2B93AD /* [CP] Check Pods Manifest.lock */,
+				6EA63C1421CFD3D1006B4D7B /* Sources */,
+				6EA63C1521CFD3D1006B4D7B /* Frameworks */,
+				6EA63C1621CFD3D1006B4D7B /* Resources */,
+				E51FC234755DE3D2485B5CBE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fortador;
+			productName = fortador;
+			productReference = 6EA63C1821CFD3D1006B4D7B /* fortador.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6EA63C2E21CFD3D3006B4D7B /* fortadorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EA63C4621CFD3D3006B4D7B /* Build configuration list for PBXNativeTarget "fortadorTests" */;
+			buildPhases = (
+				6EA63C2B21CFD3D3006B4D7B /* Sources */,
+				6EA63C2C21CFD3D3006B4D7B /* Frameworks */,
+				6EA63C2D21CFD3D3006B4D7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EA63C3121CFD3D3006B4D7B /* PBXTargetDependency */,
+			);
+			name = fortadorTests;
+			productName = fortadorTests;
+			productReference = 6EA63C2F21CFD3D3006B4D7B /* fortadorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6EA63C3921CFD3D3006B4D7B /* fortadorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EA63C4921CFD3D3006B4D7B /* Build configuration list for PBXNativeTarget "fortadorUITests" */;
+			buildPhases = (
+				6EA63C3621CFD3D3006B4D7B /* Sources */,
+				6EA63C3721CFD3D3006B4D7B /* Frameworks */,
+				6EA63C3821CFD3D3006B4D7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EA63C3C21CFD3D3006B4D7B /* PBXTargetDependency */,
+			);
+			name = fortadorUITests;
+			productName = fortadorUITests;
+			productReference = 6EA63C3A21CFD3D3006B4D7B /* fortadorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EA63C1021CFD3D1006B4D7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Aliya Shareef";
+				TargetAttributes = {
+					6EA63C1721CFD3D1006B4D7B = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					6EA63C2E21CFD3D3006B4D7B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6EA63C1721CFD3D1006B4D7B;
+					};
+					6EA63C3921CFD3D3006B4D7B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6EA63C1721CFD3D1006B4D7B;
+					};
+				};
+			};
+			buildConfigurationList = 6EA63C1321CFD3D1006B4D7B /* Build configuration list for PBXProject "fortador" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EA63C0F21CFD3D1006B4D7B;
+			productRefGroup = 6EA63C1921CFD3D1006B4D7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EA63C1721CFD3D1006B4D7B /* fortador */,
+				6EA63C2E21CFD3D3006B4D7B /* fortadorTests */,
+				6EA63C3921CFD3D3006B4D7B /* fortadorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EA63C1621CFD3D1006B4D7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA63C2921CFD3D3006B4D7B /* LaunchScreen.storyboard in Resources */,
+				6EA63C2621CFD3D3006B4D7B /* Assets.xcassets in Resources */,
+				6E03672F22018EB30067920C /* podfile in Resources */,
+				6EE02099220213FC00C1EADB /* style.json in Resources */,
+				6EA63C2121CFD3D1006B4D7B /* Main.storyboard in Resources */,
+				6E4687F6222EFAB10087A03E /* GoogleService-Info.plist in Resources */,
+				6EB443372283171900260D65 /* services.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA63C2D21CFD3D3006B4D7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA63C3821CFD3D3006B4D7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C0D7C41F5E7707D0E2B93AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fortador-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E51FC234755DE3D2485B5CBE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-fortador/Pods-fortador-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fortador/Pods-fortador-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EA63C1421CFD3D1006B4D7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA63C4F21CFDC4A006B4D7B /* mapCell.swift in Sources */,
+				6ED064BA223C453D00632DB3 /* Auto.swift in Sources */,
+				6EF7DE9F222A5BC1004CD014 /* service.swift in Sources */,
+				6EF8C2192281E90A00CE8B37 /* dateCell.swift in Sources */,
+				6EF8C2172280BF0000CE8B37 /* serviceDescriptionCell.swift in Sources */,
+				6EA63C5121CFDCDD006B4D7B /* automobileCell.swift in Sources */,
+				6EA63C1C21CFD3D1006B4D7B /* AppDelegate.swift in Sources */,
+				6ED064B8223C44B800632DB3 /* ServiceRequest.swift in Sources */,
+				6E139914222C365900CA3A8C /* user.swift in Sources */,
+				6EA63C2421CFD3D1006B4D7B /* fortador.xcdatamodeld in Sources */,
+				6E28CE5E2229D19100F3FFF9 /* serviceCell.swift in Sources */,
+				6E88CC16226B73480040A916 /* serviceTableViewCell.swift in Sources */,
+				6E88CC14226B732E0040A916 /* autoTableViewCell.swift in Sources */,
+				6EF8C21D2281E98B00CE8B37 /* serviceRequestCell.swift in Sources */,
+				6EF8C21B2281E91900CE8B37 /* datePickerCell.swift in Sources */,
+				6EA63C4D21CFDBD0006B4D7B /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA63C2B21CFD3D3006B4D7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA63C3421CFD3D3006B4D7B /* fortadorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA63C3621CFD3D3006B4D7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA63C3F21CFD3D3006B4D7B /* fortadorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EA63C3121CFD3D3006B4D7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EA63C1721CFD3D1006B4D7B /* fortador */;
+			targetProxy = 6EA63C3021CFD3D3006B4D7B /* PBXContainerItemProxy */;
+		};
+		6EA63C3C21CFD3D3006B4D7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EA63C1721CFD3D1006B4D7B /* fortador */;
+			targetProxy = 6EA63C3B21CFD3D3006B4D7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6EA63C1F21CFD3D1006B4D7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EA63C2021CFD3D1006B4D7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6EA63C2721CFD3D3006B4D7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EA63C2821CFD3D3006B4D7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EA63C4121CFD3D3006B4D7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6EA63C4221CFD3D3006B4D7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EA63C4421CFD3D3006B4D7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E646D1378074A1500C9C40DC /* Pods-fortador.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fortador/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fortador.fortador;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6EA63C4521CFD3D3006B4D7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75BC56F2240400ADFCC1FE9A /* Pods-fortador.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fortador/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fortador.fortador;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6EA63C4721CFD3D3006B4D7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fortadorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fortador.fortadorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fortador.app/fortador";
+			};
+			name = Debug;
+		};
+		6EA63C4821CFD3D3006B4D7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fortadorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fortador.fortadorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fortador.app/fortador";
+			};
+			name = Release;
+		};
+		6EA63C4A21CFD3D3006B4D7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fortadorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fortador.fortadorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fortador;
+			};
+			name = Debug;
+		};
+		6EA63C4B21CFD3D3006B4D7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fortadorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fortador.fortadorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fortador;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EA63C1321CFD3D1006B4D7B /* Build configuration list for PBXProject "fortador" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA63C4121CFD3D3006B4D7B /* Debug */,
+				6EA63C4221CFD3D3006B4D7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EA63C4321CFD3D3006B4D7B /* Build configuration list for PBXNativeTarget "fortador" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA63C4421CFD3D3006B4D7B /* Debug */,
+				6EA63C4521CFD3D3006B4D7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EA63C4621CFD3D3006B4D7B /* Build configuration list for PBXNativeTarget "fortadorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA63C4721CFD3D3006B4D7B /* Debug */,
+				6EA63C4821CFD3D3006B4D7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EA63C4921CFD3D3006B4D7B /* Build configuration list for PBXNativeTarget "fortadorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA63C4A21CFD3D3006B4D7B /* Debug */,
+				6EA63C4B21CFD3D3006B4D7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6EA63C2221CFD3D1006B4D7B /* fortador.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6EA63C2321CFD3D1006B4D7B /* fortador.xcdatamodel */,
+			);
+			currentVersion = 6EA63C2321CFD3D1006B4D7B /* fortador.xcdatamodel */;
+			path = fortador.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6EA63C1021CFD3D1006B4D7B /* Project object */;
+}
