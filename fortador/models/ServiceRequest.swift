@@ -10,6 +10,7 @@ import UIKit
 import MapKit
 
 class ServiceRequest {
+    var user: String
     var service : Service
     var time : Date
     var automobile : Auto
@@ -20,7 +21,8 @@ class ServiceRequest {
     }
     var servicetype : serviceType
     
-    init(service: Service, time : Date, auto : Auto, serviceType : serviceType , location : CLLocation) {
+    init(service: Service, user: String, time : Date, auto : Auto, serviceType : serviceType , location : CLLocation) {
+        self.user = user
         self.service = service
         self.time = time
         self.automobile = auto
@@ -30,6 +32,7 @@ class ServiceRequest {
     
     func dictForFirebase() -> Dictionary< String, Any>  {
         return [
+            "user":self.user as String,
             "serviceName": self.service.name as String,
             "time": "\(self.time)",
             "automobile": self.automobile.name,

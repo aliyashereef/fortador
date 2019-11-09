@@ -1,9 +1,12 @@
 
 source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
 target 'fortador' do
 pod 'GoogleMaps'
 pod 'GooglePlaces'
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
+pod 'MBProgressHUD'
+
 end

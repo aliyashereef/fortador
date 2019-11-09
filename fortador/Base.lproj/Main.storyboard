@@ -1,42 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="joq-V9-94K">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6s4-RX-nbJ">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="8nv-pB-Pmk">
-            <objects>
-                <navigationController id="joq-V9-94K" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="bull" largeTitles="YES" id="AP3-9U-mUS">
-                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.87125319239999999" green="0.56388491389999995" blue="0.24695363640000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </textAttributes>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <fontDescription key="fontDescription" type="italicSystem" pointSize="0.0"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="HSx-Sh-8Ru" kind="relationship" relationship="rootViewController" id="Ji9-f3-2e3"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YSp-rd-gtJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-834" y="-71"/>
-        </scene>
         <!--FORTADOR INDIA-->
         <scene sceneID="xzx-KJ-f0c">
             <objects>
-                <viewController id="HSx-Sh-8Ru" customClass="HomeViewController" customModule="fortador" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="HSx-Sh-8Ru" customClass="HomeViewController" customModule="fortador" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BRt-vt-GGX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,30 +23,31 @@
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mapCell" rowHeight="238" id="m8I-EJ-BHe" customClass="mapCell" customModule="fortador" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1" width="375" height="238"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="238"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m8I-EJ-BHe" id="wIJ-U5-vBJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="237.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="238"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UrH-pa-CHV">
-                                                    <rect key="frame" x="0.0" y="-64" width="375" height="301.5"/>
+                                                    <rect key="frame" x="0.0" y="-64" width="375" height="302"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DaJ-Yl-0zC" customClass="GMSMapView">
-                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="310.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="332"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="`locsation fsjgjfs " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LR7-hr-kKK">
-                                                                    <rect key="frame" x="6" y="280" width="299" height="20.5"/>
-                                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LR7-hr-kKK">
+                                                                    <rect key="frame" x="6" y="292" width="299" height="0.0"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="299" id="Eii-ax-rn8"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                                                     <color key="textColor" red="0.87125319239999999" green="0.56388491389999995" blue="0.24695363640000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <nil key="highlightedColor"/>
+                                                                    <color key="shadowColor" systemColor="systemGroupedBackgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <size key="shadowOffset" width="0.0" height="2"/>
                                                                 </label>
                                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mwQ-QD-0jc">
-                                                                    <rect key="frame" x="83" y="75" width="209" height="29"/>
+                                                                    <rect key="frame" x="77" y="75" width="221" height="32"/>
                                                                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                                     <segments>
                                                                         <segment title="Mobile Service"/>
@@ -85,8 +61,8 @@
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LR7-hr-kKK" secondAttribute="trailing" symbolic="YES" id="3G2-Sq-SaY"/>
-                                                                <constraint firstAttribute="bottom" secondItem="LR7-hr-kKK" secondAttribute="bottom" constant="10" id="73X-m9-x8L"/>
+                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LR7-hr-kKK" secondAttribute="trailing" constant="20" symbolic="YES" id="3G2-Sq-SaY"/>
+                                                                <constraint firstAttribute="bottom" secondItem="LR7-hr-kKK" secondAttribute="bottom" constant="40" id="73X-m9-x8L"/>
                                                                 <constraint firstItem="mwQ-QD-0jc" firstAttribute="top" secondItem="DaJ-Yl-0zC" secondAttribute="top" constant="75" id="Bls-c8-aX3"/>
                                                                 <constraint firstItem="mwQ-QD-0jc" firstAttribute="centerX" secondItem="DaJ-Yl-0zC" secondAttribute="centerX" id="H0W-pY-UDc"/>
                                                                 <constraint firstItem="LR7-hr-kKK" firstAttribute="leading" secondItem="DaJ-Yl-0zC" secondAttribute="leading" constant="6" id="fPt-29-dbu"/>
@@ -98,7 +74,7 @@
                                                         <constraint firstAttribute="trailing" secondItem="DaJ-Yl-0zC" secondAttribute="trailing" id="5W9-YL-aWT"/>
                                                         <constraint firstItem="DaJ-Yl-0zC" firstAttribute="leading" secondItem="UrH-pa-CHV" secondAttribute="leading" id="ent-Bt-PoB"/>
                                                         <constraint firstItem="DaJ-Yl-0zC" firstAttribute="top" secondItem="UrH-pa-CHV" secondAttribute="top" id="oba-tX-SZJ"/>
-                                                        <constraint firstAttribute="bottom" secondItem="DaJ-Yl-0zC" secondAttribute="bottom" constant="-9" id="wvM-dd-c3W"/>
+                                                        <constraint firstAttribute="bottom" secondItem="DaJ-Yl-0zC" secondAttribute="bottom" constant="-30" id="wvM-dd-c3W"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -116,14 +92,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="autoTableViewCell" rowHeight="120" id="hMT-76-LUj" customClass="autoTableViewCell" customModule="fortador" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="239" width="375" height="120"/>
+                                        <rect key="frame" x="0.0" y="266" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hMT-76-LUj" id="Lud-ap-ePa">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dps-wK-xbS">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="VyF-Yk-zoG">
                                                         <size key="itemSize" width="130" height="120"/>
@@ -133,7 +109,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="autoCollectionViewCell" id="cUR-CZ-9v8" customClass="automobileCell" customModule="fortador" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="-0.5" width="130" height="120"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="130" height="120"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                                 <rect key="frame" x="0.0" y="0.0" width="130" height="120"/>
@@ -185,14 +161,14 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="serviceTableViewCell" rowHeight="120" id="32h-zH-63k" customClass="serviceTableViewCell" customModule="fortador" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="359" width="375" height="120"/>
+                                        <rect key="frame" x="0.0" y="386" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="32h-zH-63k" id="EYa-IC-Hxs">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="32h-zH-63k" id="EYa-IC-Hxs">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5yG-dQ-ENp">
-                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="120.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="128" id="EcY-pJ-mTS"/>
@@ -206,14 +182,14 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="serviceCell" id="6r2-kK-lvI" customClass="serviceCell" customModule="fortador" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.5" width="150" height="120"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="120"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="120"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Detail" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c32-CR-cfV">
-                                                                        <rect key="frame" x="18" y="78.5" width="114" height="14.5"/>
+                                                                        <rect key="frame" x="10" y="78.5" width="130" height="14.5"/>
                                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
                                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -268,14 +244,14 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="serviceDescriptionCell" id="jST-g3-a8g" customClass="serviceDescriptionCell" customModule="fortador" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="479" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="506" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jST-g3-a8g" id="KTN-UD-7h8">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBE-3H-6qL">
-                                                    <rect key="frame" x="12" y="6" width="351" height="31.5"/>
+                                                    <rect key="frame" x="12" y="6" width="351" height="32"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="..9tuidgjdhg">
                                                             <attributes>
@@ -300,14 +276,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dateCell" id="cFa-Cl-s8K" customClass="dateCell" customModule="fortador" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="523" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="550" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cFa-Cl-s8K" id="DoP-wZ-PoG">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyZ-Ie-xv7">
-                                                    <rect key="frame" x="6" y="7" width="363" height="29"/>
+                                                    <rect key="frame" x="6" y="7" width="363" height="29.5"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Date &amp; Time">
                                                             <attributes>
@@ -332,17 +308,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="datePickerCell" id="OLx-R7-ZtP" customClass="datePickerCell" customModule="fortador" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="567" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="594" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OLx-R7-ZtP" id="HvJ-Ry-GPM">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3Si-BQ-ZSO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                                    <date key="date" timeIntervalSinceReferenceDate="578939067.73747098">
-                                                        <!--2019-05-07 16:24:27 +0000-->
-                                                    </date>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                                     <connections>
                                                         <action selector="datePickerValueChanged:" destination="OLx-R7-ZtP" eventType="valueChanged" id="unm-x9-d18"/>
                                                         <action selector="touchUpInside:" destination="OLx-R7-ZtP" eventType="touchUpInside" id="Sl3-6s-goz"/>
@@ -361,14 +334,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="requestButtonCell" id="NSe-3i-XnJ" customClass="serviceRequestCell" customModule="fortador" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="611" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="638" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NSe-3i-XnJ" id="uaR-Di-zJ8">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cye-5R-2F3">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                                     <color key="backgroundColor" red="0.87058823529999996" green="0.56470588239999997" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="Request Service">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -403,19 +376,317 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="adB-xK-BVS"/>
                     </view>
-                    <navigationItem key="navigationItem" title="FORTADOR INDIA" largeTitleDisplayMode="never" id="1Hp-TN-AKn"/>
+                    <navigationItem key="navigationItem" title="FORTADOR INDIA" largeTitleDisplayMode="always" id="1Hp-TN-AKn">
+                        <barButtonItem key="rightBarButtonItem" title="Menu" id="A1t-CX-D6m">
+                            <connections>
+                                <action selector="tapBtnMenu:" destination="HSx-Sh-8Ru" id="Bpw-89-hTB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="homeTableView" destination="Xu4-4r-6jf" id="iee-fd-yjX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tob-qE-kra" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-202.40000000000001" y="-72.413793103448285"/>
+            <point key="canvasLocation" x="3745" y="-1263"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4NB-qD-onu">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" id="bGe-1J-8wQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dqr-BR-MrC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="UWS-Mm-2mp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CpH-iB-atl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4366" y="-1263"/>
+        </scene>
+        <!--Login Screen Controller-->
+        <scene sceneID="fwz-A1-JlG">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="WNx-gq-wvs" customClass="LoginScreenController" customModule="fortador" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WWr-uW-1ai">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landing" highlightedImage="landing" translatesAutoresizingMaskIntoConstraints="NO" id="jdo-f0-H2c">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="713"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER YOUR PHONE NUMBER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWK-Cc-03h">
+                                <rect key="frame" x="22" y="33" width="323" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="323" id="fgi-21-7Ib"/>
+                                    <constraint firstAttribute="height" constant="29" id="x6D-3c-iYs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="21"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+91" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngo-Vl-Ucs">
+                                <rect key="frame" x="162" y="77" width="36" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="BPh-3k-8BH"/>
+                                    <constraint firstAttribute="height" constant="21" id="Fwz-1i-FYa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="phone number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KZK-pV-bpt">
+                                <rect key="frame" x="205" y="70" width="140" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="KbG-Se-C78"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xsw-gW-Lku">
+                                <rect key="frame" x="259" y="112" width="86" height="32"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="kOU-sG-b1c"/>
+                                    <constraint firstAttribute="height" constant="32" id="pBc-hh-JYH"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="VERIFY">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="verifyNumberButtonAction:" destination="WNx-gq-wvs" eventType="touchUpInside" id="Mtf-Rh-8Jk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="N2K-ep-ibF" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FWK-Cc-03h" secondAttribute="trailing" id="5gV-Z9-th9"/>
+                            <constraint firstItem="KZK-pV-bpt" firstAttribute="leading" secondItem="Ngo-Vl-Ucs" secondAttribute="trailing" constant="7" id="DWG-hw-Xu1"/>
+                            <constraint firstItem="xsw-gW-Lku" firstAttribute="top" secondItem="KZK-pV-bpt" secondAttribute="bottom" constant="8" id="ShT-Sk-cQ1"/>
+                            <constraint firstItem="N2K-ep-ibF" firstAttribute="trailing" secondItem="jdo-f0-H2c" secondAttribute="trailing" id="X1f-ZV-aqL"/>
+                            <constraint firstItem="KZK-pV-bpt" firstAttribute="top" secondItem="FWK-Cc-03h" secondAttribute="bottom" constant="8" id="Yqf-5Z-bUI"/>
+                            <constraint firstItem="FWK-Cc-03h" firstAttribute="top" secondItem="N2K-ep-ibF" secondAttribute="top" constant="33" id="ahV-V7-VdA"/>
+                            <constraint firstItem="jdo-f0-H2c" firstAttribute="leading" secondItem="N2K-ep-ibF" secondAttribute="leading" id="bA2-vZ-rpB"/>
+                            <constraint firstItem="jdo-f0-H2c" firstAttribute="top" secondItem="WWr-uW-1ai" secondAttribute="top" id="bfV-CK-1Qx"/>
+                            <constraint firstItem="N2K-ep-ibF" firstAttribute="trailing" secondItem="KZK-pV-bpt" secondAttribute="trailing" constant="30" id="c1B-sh-3Ih"/>
+                            <constraint firstItem="N2K-ep-ibF" firstAttribute="trailing" secondItem="xsw-gW-Lku" secondAttribute="trailing" constant="30" id="g80-Cj-cFW"/>
+                            <constraint firstItem="Ngo-Vl-Ucs" firstAttribute="top" secondItem="FWK-Cc-03h" secondAttribute="bottom" constant="15" id="iff-ZZ-uSz"/>
+                            <constraint firstItem="jdo-f0-H2c" firstAttribute="bottom" secondItem="N2K-ep-ibF" secondAttribute="bottom" constant="46" id="mGq-Xa-NzX"/>
+                            <constraint firstItem="N2K-ep-ibF" firstAttribute="trailing" secondItem="FWK-Cc-03h" secondAttribute="trailing" constant="30" id="p70-fw-2st"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="N2K-ep-ibF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZQ6-l8-ZAh"/>
+                    <connections>
+                        <outlet property="phoneNumberField" destination="KZK-pV-bpt" id="k5p-dn-jPL"/>
+                        <segue destination="EqF-kP-EcD" kind="showDetail" identifier="Next" id="zEa-wF-DYz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMI-fU-X5a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1256.8" y="-871.21439280359823"/>
+        </scene>
+        <!-- -->
+        <scene sceneID="lBR-FV-32T">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="EqF-kP-EcD" customClass="LoginScreenController" customModule="fortador" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K40-jT-Y0J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landing" highlightedImage="landing" translatesAutoresizingMaskIntoConstraints="NO" id="Vv3-DF-u1o">
+                                <rect key="frame" x="0.0" y="-66" width="375" height="732"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER THE CODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIe-SJ-SJS" userLabel="ENTER THE CODE">
+                                <rect key="frame" x="150" y="140" width="188" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="ggC-Uv-DIT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="21"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jgn-wX-ZsB">
+                                <rect key="frame" x="212" y="177" width="126" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Y79-z0-YOS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="126" id="pJ3-kv-ltH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Igw-ud-eam">
+                                <rect key="frame" x="224" y="218" width="114" height="33"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="P2Q-9u-rob"/>
+                                    <constraint firstAttribute="height" constant="33" id="dfs-TV-HPk"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="GET IN">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="LucidaGrande-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="verifyCodeButtonAction:" destination="EqF-kP-EcD" eventType="touchUpInside" id="Lm4-pR-7mB"/>
+                                    <action selector="verifyCodeButtonAction:" destination="WNx-gq-wvs" eventType="touchUpInside" id="YDl-Ao-fdQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Vv3-DF-u1o" firstAttribute="bottom" secondItem="Qrg-Tg-q2S" secondAttribute="bottom" constant="-1" id="6Aq-pk-ak2"/>
+                            <constraint firstItem="hIe-SJ-SJS" firstAttribute="top" secondItem="Qrg-Tg-q2S" secondAttribute="top" constant="140" id="7zy-Tv-8g0"/>
+                            <constraint firstItem="jgn-wX-ZsB" firstAttribute="leading" secondItem="Qrg-Tg-q2S" secondAttribute="leading" constant="212" id="Frg-Dt-KCl"/>
+                            <constraint firstItem="Qrg-Tg-q2S" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hIe-SJ-SJS" secondAttribute="trailing" id="NPK-Bv-rSa"/>
+                            <constraint firstItem="jgn-wX-ZsB" firstAttribute="top" secondItem="hIe-SJ-SJS" secondAttribute="bottom" constant="8" id="Pco-6l-QxQ"/>
+                            <constraint firstItem="Vv3-DF-u1o" firstAttribute="top" secondItem="Qrg-Tg-q2S" secondAttribute="top" constant="-66" id="QUs-pF-x7o"/>
+                            <constraint firstItem="Qrg-Tg-q2S" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jgn-wX-ZsB" secondAttribute="trailing" id="V5c-jd-WXl"/>
+                            <constraint firstItem="Vv3-DF-u1o" firstAttribute="leading" secondItem="Qrg-Tg-q2S" secondAttribute="leading" id="hiX-rA-jcx"/>
+                            <constraint firstItem="Igw-ud-eam" firstAttribute="top" secondItem="jgn-wX-ZsB" secondAttribute="bottom" constant="7" id="kIV-Wf-q8S"/>
+                            <constraint firstItem="Qrg-Tg-q2S" firstAttribute="trailing" secondItem="Igw-ud-eam" secondAttribute="trailing" constant="37" id="mIf-EM-Wzm"/>
+                            <constraint firstAttribute="bottom" secondItem="Vv3-DF-u1o" secondAttribute="bottom" constant="1" id="oZn-02-hbe"/>
+                            <constraint firstItem="Vv3-DF-u1o" firstAttribute="trailing" secondItem="Qrg-Tg-q2S" secondAttribute="trailing" id="q6g-73-2Zl"/>
+                            <constraint firstItem="hIe-SJ-SJS" firstAttribute="leading" secondItem="Qrg-Tg-q2S" secondAttribute="leading" constant="150" id="rSn-0Q-5dm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qrg-Tg-q2S"/>
+                    </view>
+                    <navigationItem key="navigationItem" title=" " id="9m2-AA-eb0">
+                        <barButtonItem key="backBarButtonItem" title=" " id="aDQ-05-dIc"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="verificationCodeField" destination="jgn-wX-ZsB" id="qpT-xA-XT1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAi-VM-8pY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="-871.21439280359823"/>
+        </scene>
+        <!--Login Screen Controller-->
+        <scene sceneID="6tU-Fw-EOA">
+            <objects>
+                <viewController storyboardIdentifier="loginVC" id="V2k-aA-qW4" customClass="LoginScreenController" customModule="fortador" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8RR-xg-uJ7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landing" highlightedImage="landing" translatesAutoresizingMaskIntoConstraints="NO" id="baS-wX-Dsv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruj-S7-hgP">
+                                <rect key="frame" x="50" y="258" width="280" height="49"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="E5M-6X-PV5"/>
+                                    <constraint firstAttribute="height" constant="49" id="dB5-u6-2ft"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="32"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WNx-gq-wvs" kind="showDetail" id="UgP-Lk-lGX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW TO FORTADOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUP-Pu-peB">
+                                <rect key="frame" x="50" y="221" width="280" height="28.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28.5" id="5fh-zv-hUe"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="H9A-2c-ug6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="28"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bull" translatesAutoresizingMaskIntoConstraints="NO" id="ckb-91-K6R">
+                                <rect key="frame" x="98" y="89" width="179" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="0Sh-YP-cYv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="baS-wX-Dsv" firstAttribute="top" secondItem="8RR-xg-uJ7" secondAttribute="top" id="0HF-1m-Tqz"/>
+                            <constraint firstItem="baS-wX-Dsv" firstAttribute="bottom" secondItem="1zh-UW-Xe8" secondAttribute="bottom" id="4re-86-fWU"/>
+                            <constraint firstItem="LUP-Pu-peB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1zh-UW-Xe8" secondAttribute="leading" id="7ml-qB-dD3"/>
+                            <constraint firstItem="LUP-Pu-peB" firstAttribute="top" secondItem="ckb-91-K6R" secondAttribute="bottom" constant="8" id="DL0-Hc-4pm"/>
+                            <constraint firstItem="ruj-S7-hgP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1zh-UW-Xe8" secondAttribute="leading" id="Ea3-cL-SMw"/>
+                            <constraint firstItem="ruj-S7-hgP" firstAttribute="top" secondItem="LUP-Pu-peB" secondAttribute="bottom" constant="8.5" id="JPh-sr-2oE"/>
+                            <constraint firstItem="LUP-Pu-peB" firstAttribute="top" secondItem="1zh-UW-Xe8" secondAttribute="top" constant="221" id="QG4-89-JOz"/>
+                            <constraint firstItem="baS-wX-Dsv" firstAttribute="trailing" secondItem="1zh-UW-Xe8" secondAttribute="trailing" id="RcY-aX-ldQ"/>
+                            <constraint firstItem="1zh-UW-Xe8" firstAttribute="trailing" secondItem="LUP-Pu-peB" secondAttribute="trailing" constant="45" id="RnS-0R-tk8"/>
+                            <constraint firstItem="1zh-UW-Xe8" firstAttribute="trailing" secondItem="ckb-91-K6R" secondAttribute="trailing" constant="98" id="ZCZ-3w-j75"/>
+                            <constraint firstItem="ckb-91-K6R" firstAttribute="leading" secondItem="1zh-UW-Xe8" secondAttribute="leading" constant="98" id="ZRQ-gv-Dpa"/>
+                            <constraint firstItem="1zh-UW-Xe8" firstAttribute="trailing" secondItem="ruj-S7-hgP" secondAttribute="trailing" constant="45" id="gjZ-B3-fyU"/>
+                            <constraint firstItem="baS-wX-Dsv" firstAttribute="leading" secondItem="1zh-UW-Xe8" secondAttribute="leading" id="yAV-uu-2jb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1zh-UW-Xe8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ALL-we-pD4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wbb-OV-qm4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="623" y="-871"/>
+        </scene>
+        <!--mainVC-->
+        <scene sceneID="hU4-V5-yAb">
+            <objects>
+                <navigationController storyboardIdentifier="homeVC" title="mainVC" automaticallyAdjustsScrollViewInsets="NO" id="6s4-RX-nbJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="axr-NC-WNZ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Duh-23-A1N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HSx-Sh-8Ru" kind="relationship" relationship="rootViewController" id="lti-Ew-8rX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ljh-9b-0Dv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3112.8000000000002" y="-1263.4182908545729"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KEQ-XD-ERX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="paq-UG-WCt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Klk-oF-Q3C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="koT-RM-2B9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9" y="-871"/>
         </scene>
     </scenes>
     <resources>
         <image name="3" width="192.5" height="193"/>
         <image name="SUV" width="573.5" height="241"/>
         <image name="bull" width="120" height="81"/>
+        <image name="landing" width="250" height="250"/>
     </resources>
 </document>

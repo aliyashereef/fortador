@@ -24,9 +24,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     var requestedserviceType :ServiceRequest.serviceType!
     @IBOutlet weak var homeTableView: UITableView!
     var ref: DatabaseReference!
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        var isLoggedIn = UserDefaults.standard.bool(forKey:"UserLoggedIn")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = false
         self.homeTableView.rowHeight = UITableView.automaticDimension
         self.homeTableView.estimatedRowHeight = UITableView.automaticDimension
         if let url = Bundle.main.url(forResource: "services", withExtension: "json") {
@@ -209,8 +215,8 @@ extension HomeViewController : mapDelegate {
 extension HomeViewController : requestDelegate {
     
     func requestServiceTapped() {
-        if (self.selectedAuto != nil) && (self.requestService != nil) {
-        self.serviceRequest = ServiceRequest.init(service:self.requestService! , time: self.serviceDate, auto:self.selectedAuto! , serviceType: self.requestedserviceType!, location: self.serviceLocation!)
+        if (self.selectedAuto != nil) && (self.requestService != nil) && (self.serviceLocation != nil)  {
+            self.serviceRequest = ServiceRequest.init(service:self.requestService! ,user: (Auth.auth().currentUser?.phoneNumber)!, time: self.serviceDate, auto:self.selectedAuto! , serviceType: self.requestedserviceType!, location: self.serviceLocation!)
         self.postServiceRequest()
         } else {
             self.showAlert(title: "Remember", message: "Please select your vehicle segment and service you wish to do. Thank you", style: .alert)
@@ -223,13 +229,48 @@ extension HomeViewController : requestDelegate {
             switch action.style{
             case .default:
                 print("default")
-                
             case .cancel:
                 print("cancel")
-                
             case .destructive:
                 print("destructive")
+            @unknown default:
+                print("error")
             }}))
-        self.present(alert, animated: true, completion: nil)
+        self.present(alert, animated: true,completion: nil)
+    }
+    
+    @IBAction func tapBtnMenu(_ sender: Any) {
+        SidebarLauncher.init(delegate:self).show()
+     }
+}
+
+extension HomeViewController: SidebarDelegate{
+    func sidbarDidOpen() {
+    }
+
+    func sidebarDidClose(with item: NavigationModel?) {
+        guard let item = item else {return}
+        switch item.type {
+        case .about:
+            print("called about")
+        case .facebook:
+            print("called facebook")
+        case .logout:
+            let firebaseAuth = Auth.auth()
+            do {
+              try firebaseAuth.signOut()
+                UserDefaults.standard.set(false, forKey: "UserLoggedIn")
+                UserDefaults.standard.synchronize()
+                if let storyboard = self.storyboard {
+                    let vc = storyboard.instantiateViewController(withIdentifier: "loginVC") 
+                    let appsDelegate = UIApplication.shared.delegate
+                    appsDelegate?.window!!.rootViewController = nil
+                    appsDelegate?.window!!.rootViewController = vc
+                    self.present(vc, animated: false, completion: nil)
+                }
+            } catch let signOutError as NSError {
+              print ("Error signing out: %@", signOutError)
+            }
+        }
     }
 }
